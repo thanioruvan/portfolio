@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a {
+  padding: 8px 12px;
+  background: #334155;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background: #475569;
+}
+
+div {
+  padding: 20px;
+}
