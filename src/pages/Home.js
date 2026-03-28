@@ -41,7 +41,7 @@ function Home() {
             hover:animate-[gradientMove_4s_ease_infinite]
           "
         >
-          Shrivarshan chinnia
+          Shrivarshan chinniah
         </motion.h1>
 
         {/* ROLE */}
