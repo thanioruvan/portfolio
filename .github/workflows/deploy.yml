@@ -10,16 +10,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v3
+
+      # ✅ Use stable Node version
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
-      # ✅ Configure AWS
+      # ✅ Configure AWS properly
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
@@ -27,12 +33,12 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
-      # ✅ Upload to S3 (OFFICIAL METHOD)
-      - name: Sync to S3
+      # ✅ Upload to S3
+      - name: Upload to S3
         run: |
-          aws s3 sync build/ s3://varshan-portfolio --delete
+          aws s3 sync ./build s3://varshan-portfolio --delete
 
-      # ✅ Invalidate CloudFront
+      # ✅ Invalidate CloudFront (clean)
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation \
