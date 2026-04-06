@@ -16,7 +16,9 @@ function Inventory() {
 
       const a = document.createElement("a");
       a.href = url;
-      a.download = "Inventory_Report.docx";
+
+      // ✅ IMPORTANT: keep original filename
+      a.download = ""; 
 
       document.body.appendChild(a);
       a.click();
@@ -25,7 +27,7 @@ function Inventory() {
       window.URL.revokeObjectURL(url);
     } catch (error) {
       console.error("Download failed:", error);
-      alert("Failed to download file");
+      alert("Failed to download report");
     }
   };
 
