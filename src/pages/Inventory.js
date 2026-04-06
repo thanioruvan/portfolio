@@ -74,12 +74,14 @@ function Inventory() {
           </p>
 
           {/* BUTTON VERSION (better UX than plain <a>) */}
-          <button
-            onClick={() => window.open(reportUrl, "_blank")}
-            className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
-          >
-            📄 Download Report
-          </button>
+          <a
+  href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+>
+  📄 Download Report
+</a>
         </motion.div>
 
       </motion.div>
