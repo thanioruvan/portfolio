@@ -75,7 +75,7 @@ function Inventory() {
 
           {/* FINAL FIXED DOWNLOAD BUTTON */}
          <a
-  href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
+         href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
   target="_blank"
   rel="noopener noreferrer"
   download="Inventory_Report.docx"
