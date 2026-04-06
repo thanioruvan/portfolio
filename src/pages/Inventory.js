@@ -70,13 +70,14 @@ function Inventory() {
             Download the full documentation of the project.
           </p>
 
-          <a
-            href="/sc959_Final Report.docx"
-            download
-            className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
-          >
-            📄 Download Report
-          </a>
+         <a
+  href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
+  target="_blank"
+  rel="noreferrer"
+  className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+>
+  📄 Download Report
+</a>
         </motion.div>
 
       </motion.div>
