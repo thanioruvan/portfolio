@@ -1,16 +1,9 @@
 import { motion } from "framer-motion";
 
 function Inventory() {
-  const reportUrl =
-    "https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx";
-
-  const handleDownload = () => {
-    window.location.href = reportUrl;
-  };
-
   return (
     <div className="relative min-h-screen text-white flex items-center justify-center px-4 overflow-hidden">
-      
+
       {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -77,13 +70,15 @@ function Inventory() {
             Download the full documentation of the project.
           </p>
 
-          {/* FINAL WORKING BUTTON */}
-          <button
-            onClick={handleDownload}
+          {/* FINAL WORKING DOWNLOAD LINK */}
+          <a
+            href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
           >
             📄 Download Report
-          </button>
+          </a>
         </motion.div>
 
       </motion.div>
