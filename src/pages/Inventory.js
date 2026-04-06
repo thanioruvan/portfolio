@@ -72,7 +72,7 @@ function Inventory() {
 
           {/* FINAL WORKING DOWNLOAD LINK */}
           <a
-            href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
+            href="sc959_Final Report.docx"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
