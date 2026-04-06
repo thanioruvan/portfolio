@@ -71,7 +71,7 @@ function Inventory() {
           </p>
 
           <a
-            href="/report.docx"
+            href="/sc959_Final Report.docx"
             download
             className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
           >
