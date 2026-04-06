@@ -6,7 +6,7 @@ function Inventory() {
 
   return (
     <div className="relative min-h-screen text-white flex items-center justify-center px-4 overflow-hidden">
-      
+
       {/* BACKGROUND */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -73,15 +73,16 @@ function Inventory() {
             Download the full documentation of the project.
           </p>
 
-          {/* BUTTON VERSION (better UX than plain <a>) */}
+          {/* FINAL FIXED DOWNLOAD BUTTON */}
           <a
-  href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
->
-  📄 Download Report
-</a>
+            href={reportUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Inventory_Report.docx"
+            className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+          >
+            📄 Download Report
+          </a>
         </motion.div>
 
       </motion.div>
