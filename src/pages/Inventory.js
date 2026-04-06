@@ -70,7 +70,7 @@ function Inventory() {
             Download the full documentation of the project.
           </p>
 
-         <a
+        <a
   href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
   target="_blank"
   rel="noreferrer"
