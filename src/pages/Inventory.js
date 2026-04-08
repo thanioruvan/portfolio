@@ -56,7 +56,7 @@ function Inventory() {
           </ul>
         </motion.div>
 
-        {/* REPORT CARD */}
+        {/* REPORT + WEBSITE CARD */}
         <motion.div
           initial={{ y: 60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -64,20 +64,34 @@ function Inventory() {
           whileHover={{ scale: 1.03 }}
           className="mt-8 backdrop-blur-xl bg-white/10 border border-white/20 p-6 rounded-2xl shadow-xl transition duration-300 hover:bg-green-500/10 hover:shadow-green-500/30 hover:border-green-400"
         >
-          <h2 className="text-2xl font-semibold mb-4">Project Report</h2>
+          <h2 className="text-2xl font-semibold mb-4">Project Links</h2>
 
-          <p className="text-gray-400 mb-4">
-            Download the full documentation of the project.
+          <p className="text-gray-400 mb-6">
+            View the live project or download the full documentation.
           </p>
 
-          {/* ✅ FIXED DOWNLOAD LINK */}
-          <a
-            href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
-            download
-            className="inline-block px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
-          >
-            📄 Download Report
-          </a>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+
+            {/* 🌐 LIVE WEBSITE BUTTON */}
+            <a
+              href="https://dj2dx5sh6hws0.cloudfront.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-green-500 rounded-lg hover:bg-green-600 transition"
+            >
+              🌐 View Live Project
+            </a>
+
+            {/* 📄 DOWNLOAD REPORT BUTTON */}
+            <a
+              href="https://d1gdxrupq4ojlt.cloudfront.net/sc959_Final%20Report.docx"
+              download
+              className="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
+            >
+              📄 Download Report
+            </a>
+
+          </div>
 
         </motion.div>
 
