@@ -86,27 +86,6 @@ function Whiteboard() {
           </div>
         </motion.div>
 
-        {/* ACTION BUTTONS */}
-       <motion.div
-  variants={{
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 }
-  }}
-  className="mt-8 flex justify-center gap-4"
->
-  <button
-    className="px-6 py-3 bg-blue-500 rounded-lg hover:bg-blue-600 transition"
-  >
-    🔗 Live Demo
-  </button>
-
-  <button
-    className="px-6 py-3 bg-gray-700 rounded-lg hover:bg-gray-800 transition"
-  >
-    💻 GitHub
-  </button>
-</motion.div>
-
       </motion.div>
     </div>
   );
